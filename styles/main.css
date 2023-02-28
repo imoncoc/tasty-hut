@@ -1,0 +1,77 @@
+:root{
+    --color-white: #ffffff;
+    --color-main-yellow: #FFC107;
+    --color-main-black: #100F0F;
+    --color-black-alt: #403F3F;
+    --color-grey: #706F6F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.tasty-btn-primary{
+    background: var(--color-main-yellow);
+    color: var(--color-main-black);
+    padding: 0.6rem 1.2rem;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 0.3rem;
+    transition: all 0.4s;
+}
+.tasty-btn-primary:hover{
+    background: var(--color-main-black);
+    color: var(--color-white);
+}
+
+.bg-banner{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 21.92%, rgba(0, 0, 0, 0.418) 160.04%, rgba(0, 0, 0, 0.121) 160.06%),
+        url('../images/banner_1.png') center fixed no-repeat !important;
+    height: 88vh;
+    width: 100%;
+}
+
+.banner{
+    height: 88vh;
+}
+
+.main-title{
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+.tasty-card-img{
+    border-radius: .7rem;
+}
+.tasty-card-name{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.tasty-card-description{
+    color: var(--color-grey);
+    font-weight: 400;
+}
+.tasty-single-btn{
+    text-decoration: underline;
+    color: var(--color-main-yellow);
+    cursor: pointer;
+}
+
+
+.modal-img{
+    height: 300px !important;
+    width: 100% !important;
+}
+
+
+
+.bg-footer{
+    background: rgba(255, 193, 7, 0.05);
+}
