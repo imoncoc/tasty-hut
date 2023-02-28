@@ -75,3 +75,9 @@ body{
 .bg-footer{
     background: rgba(255, 193, 7, 0.05);
 }
+
+
+
+.modal-link{
+    color: var(--color-main-yellow);
+}

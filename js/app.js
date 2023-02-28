@@ -69,14 +69,26 @@ const displayMealDetails = (meal) => {
     const mealsDetails = document.getElementById("mealDetailsBody");
     mealsDetails.innerHTML = `
     <img class="img-fluid modal-img mb-3" src="${meal.strMealThumb}" >
-    <p> <strong>Category : </strong> ${meal.strCategory} </p>
-    <p> <strong>Area : </strong> ${meal.strArea} </p>
-    <p> <strong>Instructions : </strong> ${meal.strInstructions} </p>
-    <p> <strong>Tags : </strong> ${meal.strTags? meal.strTags: 'No Tags Available' } </p>
-    <p> <strong>Youtube : </strong> ${meal.strYoutube} </p>
+    <p> <strong>Category : </strong> ${
+      meal.strCategory ? meal.strCategory : "No Category Available"
+    } </p>
+    <p> <strong>Area : </strong> ${
+      meal.strArea ? meal.strArea : "No Area Available"
+    } </p>
+    <p> <strong>Instructions : </strong> ${
+      meal.strInstructions ? meal.strInstructions : "No Instructions Available"
+    } </p>
+    <p> <strong>Tags : </strong> ${
+      meal.strTags ? meal.strTags : "No Tags Available"
+    } </p>
+    <a class="nav-link" href="${
+      meal.strYoutube
+    }" target="_blank"> <strong>Youtube : </strong> <span class="modal-link">${
+      meal.strYoutube ? meal.strYoutube : "No Youtube Available"
+    } </span></a>
     `;
 }
 
 
 
-loadMeals("d");
+loadMeals("a");
